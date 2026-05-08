@@ -1,3 +1,25 @@
+<p align="center">
+  <img src="./docs/hero.svg" alt="Sprint Wars — enterprise software delivery simulator" width="100%" />
+</p>
+
+<p align="center">
+  <a href="https://babanomania.github.io/sprint-wars/"><strong>▶ Play it in your browser</strong></a>
+  &nbsp;·&nbsp;
+  <a href="#run-it-locally">Run locally</a>
+  &nbsp;·&nbsp;
+  <a href="#architecture">Architecture</a>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/version-1.0%20beta-eab308" alt="v1.0 beta" />
+  <img src="https://img.shields.io/badge/react-19-61dafb" alt="React 19" />
+  <img src="https://img.shields.io/badge/typescript-5-3178c6" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/state-zustand-orange" alt="Zustand" />
+  <img src="https://img.shields.io/badge/styling-tailwindcss-06b6d4" alt="TailwindCSS" />
+</p>
+
+---
+
 # Sprint Wars
 
 > A browser-based enterprise software-delivery simulator. Ship the sprint. Survive the year. Don't get walked out by HR.
