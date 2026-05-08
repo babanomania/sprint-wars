@@ -3,11 +3,19 @@
 </p>
 
 <p align="center">
-  <a href="#deploy"><strong>▶ Deploy your own</strong></a>
+  <a href="https://sprint-wars.vercel.app/"><strong>▶ Play it now</strong></a>
   &nbsp;·&nbsp;
   <a href="#run-it-locally">Run locally</a>
   &nbsp;·&nbsp;
+  <a href="#deploy">Deploy your own</a>
+  &nbsp;·&nbsp;
   <a href="#architecture">Architecture</a>
+</p>
+
+<p align="center">
+  <a href="https://sprint-wars.vercel.app/">
+    <img src="https://img.shields.io/badge/▶_play_now-sprint--wars.vercel.app-4f8df7?style=for-the-badge" alt="Play Sprint Wars on Vercel" />
+  </a>
 </p>
 
 <p align="center">
@@ -22,6 +30,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-1.0%20beta-eab308" alt="v1.0 beta" />
+  <a href="https://sprint-wars.vercel.app/"><img src="https://img.shields.io/badge/live-vercel-000000?logo=vercel" alt="Live on Vercel" /></a>
   <img src="https://img.shields.io/badge/react-19-61dafb" alt="React 19" />
   <img src="https://img.shields.io/badge/typescript-5-3178c6" alt="TypeScript" />
   <img src="https://img.shields.io/badge/state-zustand-orange" alt="Zustand" />
@@ -82,11 +91,15 @@ The app is a fully static SPA — anything that serves `dist/` will host it. Pic
 
 ### Vercel (recommended — zero config)
 
+The live deployment runs at **[sprint-wars.vercel.app](https://sprint-wars.vercel.app/)** — every push to `main` re-deploys automatically.
+
+To stand up your own copy:
+
 1. Click the **Deploy with Vercel** button at the top, or [import the repo manually](https://vercel.com/new).
 2. Accept the defaults — Vercel auto-detects Vite, runs `npm run build`, and serves `dist/`.
-3. Done. Every push to `main` re-deploys automatically.
+3. Done. Every push re-deploys, every PR gets a preview URL.
 
-`vercel.json` ships in the repo with the framework preset and an SPA rewrite, so no settings to fiddle with.
+`vercel.json` ships in the repo with the framework preset and an SPA rewrite, so there are no settings to fiddle with.
 
 ### Netlify
 
