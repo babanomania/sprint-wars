@@ -3,11 +3,21 @@
 </p>
 
 <p align="center">
-  <a href="https://babanomania.github.io/sprint-wars/"><strong>▶ Play it in your browser</strong></a>
+  <a href="#deploy"><strong>▶ Deploy your own</strong></a>
   &nbsp;·&nbsp;
   <a href="#run-it-locally">Run locally</a>
   &nbsp;·&nbsp;
   <a href="#architecture">Architecture</a>
+</p>
+
+<p align="center">
+  <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fbabanomania%2Fsprint-wars">
+    <img src="https://vercel.com/button" alt="Deploy with Vercel" />
+  </a>
+  &nbsp;
+  <a href="https://app.netlify.com/start/deploy?repository=https://github.com/babanomania/sprint-wars">
+    <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" />
+  </a>
 </p>
 
 <p align="center">
@@ -65,6 +75,32 @@ Then open http://localhost:5173 and click **Start a new tour**.
 npm run build      # production bundle into ./dist
 npm run preview    # preview the prod bundle
 ```
+
+## Deploy
+
+The app is a fully static SPA — anything that serves `dist/` will host it. Pick whichever is easiest.
+
+### Vercel (recommended — zero config)
+
+1. Click the **Deploy with Vercel** button at the top, or [import the repo manually](https://vercel.com/new).
+2. Accept the defaults — Vercel auto-detects Vite, runs `npm run build`, and serves `dist/`.
+3. Done. Every push to `main` re-deploys automatically.
+
+`vercel.json` ships in the repo with the framework preset and an SPA rewrite, so no settings to fiddle with.
+
+### Netlify
+
+Click the **Deploy to Netlify** button, or run `netlify deploy --prod` after `npm run build`. Netlify auto-detects Vite the same way.
+
+### GitHub Pages (free tier, public repos only)
+
+A workflow lives at [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml). It triggers on push to `main` and builds with `VITE_BASE_PATH=/sprint-wars/` so assets resolve under the `/<repo>/` sub-path that GitHub Pages serves from.
+
+**One-time setup:**
+
+1. In the repo on GitHub, go to **Settings → Pages**.
+2. Under **Build and deployment → Source**, choose **GitHub Actions** (not "Deploy from a branch"). Without this the workflow's `actions/configure-pages` step fails — this is the most common reason a fresh Pages setup looks broken.
+3. Push to `main`. Watch the **Actions** tab; the deploy URL appears at the top of the run.
 
 ## Architecture
 
