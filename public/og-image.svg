@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="Sprint Wars — A 12-sprint browser game about agile. Coping mechanisms included." preserveAspectRatio="xMidYMid meet">
+  <title>Sprint Wars — A 12-sprint browser game about agile. Coping mechanisms included.</title>
+
+  <defs>
+    <!-- Dark theme background — matches the default app theme (bg-base #0B0D12). -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0"    stop-color="#1A2238"/>
+      <stop offset="0.55" stop-color="#0F1320"/>
+      <stop offset="1"    stop-color="#05070D"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.3" r="0.7">
+      <stop offset="0" stop-color="#4F8DF7" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#4F8DF7" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="sevGlow" cx="0.85" cy="0.85" r="0.5">
+      <stop offset="0" stop-color="#FF5D6C" stop-opacity="0.18"/>
+      <stop offset="1" stop-color="#FF5D6C" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Sticker shadow -->
+    <filter id="stickerShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="6" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect width="1200" height="630" fill="url(#sevGlow)"/>
+
+  <!-- Subtle terminal-grid dots for that "infra dashboard at 2am" vibe -->
+  <g fill="#FFFFFF" opacity="0.05">
+    <circle cx="80"   cy="80"  r="2"/>
+    <circle cx="160"  cy="80"  r="2"/>
+    <circle cx="240"  cy="80"  r="2"/>
+    <circle cx="320"  cy="80"  r="2"/>
+    <circle cx="960"  cy="80"  r="2"/>
+    <circle cx="1040" cy="80"  r="2"/>
+    <circle cx="1120" cy="80"  r="2"/>
+    <circle cx="80"   cy="550" r="2"/>
+    <circle cx="160"  cy="550" r="2"/>
+    <circle cx="240"  cy="550" r="2"/>
+    <circle cx="960"  cy="550" r="2"/>
+    <circle cx="1040" cy="550" r="2"/>
+    <circle cx="1120" cy="550" r="2"/>
+  </g>
+
+  <!-- ── Top: brand strip ── -->
+  <g font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <g transform="translate(60 60)">
+      <rect width="44" height="44" rx="9" fill="#4F8DF7" fill-opacity="0.16" stroke="#4F8DF7" stroke-opacity="0.35"/>
+      <text x="22" y="29" fill="#4F8DF7" font-size="16" font-weight="800" text-anchor="middle" letter-spacing="-0.5">SW</text>
+    </g>
+    <text x="118" y="78" fill="#E5E9F0" font-size="17" font-weight="700" letter-spacing="-0.2">Sprint Wars</text>
+    <text x="118" y="98" fill="#9AA3B2" font-size="11" font-weight="600" letter-spacing="2">v1.0 · BETA</text>
+
+    <!-- Blue kicker chip top-right -->
+    <g transform="translate(970 64)">
+      <rect width="190" height="36" rx="18" fill="#4F8DF7" fill-opacity="0.14" stroke="#4F8DF7" stroke-opacity="0.4"/>
+      <circle cx="22" cy="18" r="5" fill="#4F8DF7"/>
+      <text x="40" y="23" fill="#7DAEF9" font-size="13" font-weight="700" letter-spacing="2.5">BROWSER GAME</text>
+    </g>
+  </g>
+
+  <!-- ── Hero: satirical setup + warmer self-aware punchline ── -->
+  <!-- Centered + safe so WhatsApp's square thumbnail crop still works.
+       Three lines: setup, continuation, punchline (in accent-blue italic).
+       The punchline frames the game as therapy — game + sarcasm + warmth. -->
+  <g font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+    <text x="600" y="225" fill="#FFFFFF" font-size="64" font-weight="800" letter-spacing="-2">
+      A 12-sprint browser game
+    </text>
+    <text x="600" y="305" fill="#FFFFFF" font-size="64" font-weight="800" letter-spacing="-2">
+      about agile.
+    </text>
+    <text x="600" y="395" fill="#4F8DF7" font-size="56" font-weight="800" font-style="italic" letter-spacing="-1.5">
+      Coping mechanisms included.
+    </text>
+  </g>
+
+  <!-- ── Stats strip ── -->
+  <g font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" text-anchor="middle">
+    <text x="600" y="465" fill="#9AA3B2" font-size="20" font-weight="500">
+      12 sprints · 6 engineers · 5 story arcs · SEV1s at 2am
+    </text>
+  </g>
+
+  <!-- ── Bottom: URL CTA chip ── -->
+  <g font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+    <g transform="translate(420 543)" filter="url(#stickerShadow)">
+      <rect width="360" height="48" rx="24" fill="#4F8DF7"/>
+      <text x="180" y="31" fill="#FFFFFF" font-size="15" font-weight="700" text-anchor="middle" letter-spacing="0.3">
+        ▶  Play in your browser  →
+      </text>
+    </g>
+    <text x="600" y="615" fill="#FFFFFF" opacity="0.4" font-size="11" font-weight="600" text-anchor="middle" letter-spacing="2">
+      BABANOMANIA.GITHUB.IO/SPRINT-WARS
+    </text>
+  </g>
+</svg>
